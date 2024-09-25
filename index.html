@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="all">
+    <main>
+            <h1>Cadastro para devs </h1>
+            <form action="final.php" autocomplete="on">
+            
+            
+            <div class="data">
+                
+                        <div id="name">
+                            
+                            <input type="text" name="nome" id="inome" required placeholder="Nome" >
+                        </div>
+                
+                        <div id="lastname">
+                            
+                             <input type="text" name="sbrnome" id="snome" required size="15" placeholder="Sobrenome">
+                        </div>
+                        <div id="gmail">
+                         
+                            <input type="email" name="email" id="iemail" required placeholder="Email">
+                        </div>
+            </div>
+            
+            
+            
+                <p id="stack">
+                    Qual é o seu lado na programação? <br>
+            
+                     <label for="front">front-end </label><input type="radio" name="lado" id="front">
+                     <label for="back">Back-end </label>
+                     <input type="radio" name="lado" id="back">
+                     <label for="full">Full-stack </label><input type="radio" name="lado" id="full">
+                </p>
+            
+            
+                <div id="lingua">
+                    <p>selecione as tecnologias:</p>
+                    <div id="lang">
+                    
+                        <input type="checkbox" name="html" 
+                        id="ihtml">
+                        <label for="ihtml">Html</label> <br>
+                        <input type="checkbox" name="css" id="icss">
+                        <label for="icss">Css</label>  <br>
+
+                        <input type="checkbox" name="js" id="ijs">
+                        <label for="ijs">Javascript</label> <br>
+                        <input type="checkbox" name="php" id="iphp">
+                        <label for="iphp">PHP</label> <br>
+                        <input type="checkbox" name="c#" id="ic#">
+                        <label for="ic#">C#</label><br>
+                        
+                        <input type="checkbox" name="python" id="ipython">
+                        <label for="ipython">Python</label> <br>
+
+                        <input type="checkbox" name="java" id="ijava">
+                        <label for="ijava">Java</label> 
+                   </div>
+                </div>
+            
+            
+                    <div id="junior">
+                        <p>senioridade:</p>
+
+                            <select name="senioridade" id="isenioridade">
+                                <option>junior</option>
+                                <option>pleno</option>
+                                <option>senior</option>
+                            </select>
+                    </div>
+            
+                    <div>
+                        <p id="cont">conte um pouco da sua experiencia abaixo:</p>
+                        <textarea name="" id="text" cols="40" rows="5" placeholder="escreva aqui"></textarea>
+                    </div>
+                    <div >
+                        <input type="submit" value="Concluido" id="sub">
+                    </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
